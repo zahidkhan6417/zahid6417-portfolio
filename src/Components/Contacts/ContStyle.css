@@ -1,0 +1,71 @@
+.contact-left {
+  flex-basis: 35%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-right {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-left p {
+  margin-top: 30px;
+}
+
+.contact-left i {
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: color 0.5s, transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+.btn.btn2 {
+  display: inline-block;
+}
+
+.btn.btn3 {
+  background: #080808;
+  margin-top: 30px;
+  transition: background 0.5;
+}
+
+.btn.btn3:hover {
+  background: #ff004f;
+}
+
+.contact-right form {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #f9f9f9;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}/*# sourceMappingURL=ContStyle.css.map */

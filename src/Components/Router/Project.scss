@@ -1,0 +1,261 @@
+$background-color: white;
+$gray-bg-color: #f9f9f9;
+$title-color: black;
+$text-color: #767676;
+$header-color: #147efb;
+$black-shade: #2d2e32;
+
+// font family
+$title-font: "Poppins", sans-serif;
+$text-font: "Mulish", sans-serif;
+
+// font size
+$text-size: 1.7rem;
+$hero-size: 5.5rem;
+$hero-text-size: 1.8rem;
+$headings-size: 2.5rem;
+
+.project {
+  background-color: $gray-bg-color;
+  padding: 5rem 0;
+
+  @media (max-width: 1020px) {
+    padding: 8rem 0;
+  }
+}
+.containerr {
+  margin: 0 auto;
+  max-width: 100rem;
+  padding: 0 5rem;
+  gap: 0.5rem;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  
+
+  @media (max-width: 600px) {
+    text-align: center;
+  }
+
+  p {
+    color: #ff004f;
+    font-size: $text-size;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 2.0rem;
+    color: $black-shade;
+    margin-bottom: 6rem;
+  }
+}
+
+.projects-grid {
+  margin-top: -2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  width: 100%;
+  height: auto;
+  gap: 5rem;
+  padding-left: 5rem;
+
+
+  .pro {
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    border-radius: 1.7rem;
+
+    &__1 {
+      height: 28rem;
+      width: 60rem;
+      flex-direction: row;
+      padding: 1rem;
+      gap: 5rem;
+
+      @media (max-width: 1020px) {
+        height: 55rem;
+        flex-direction: column !important;
+        gap: 3rem;
+        width: fit-content;
+        margin: 0 auto;
+
+      }
+
+      @media (max-width: 400px) {
+        width: 80%;
+      }
+    }
+
+    &__img {
+      width: 25rem;
+      height: 25rem;
+      border-radius: 1.7rem;
+      background-color: #76767633;
+      overflow: hidden;
+      box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+
+      @media (max-width: 650px) {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__text {
+      display: flex;
+      width: 30rem;
+      height: auto;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+
+      @media (max-width: 1020px) {
+        margin: 0 auto;
+      }
+
+      @media (max-width: 400px) {
+        width: 100%;
+      }
+
+      img {
+        width: 7rem;
+        position: absolute;
+        top: -2px;
+        right: -19px;
+      }
+
+      h3 {
+        font-size: $text-size;
+        text-transform: uppercase;
+        color: $black-shade;
+        margin-top: -1rem;
+        position: relative;
+      }
+
+      p {
+        font-size: 1.0rem;
+        color: $text-color;
+        text-align: center;
+        text-transform: none;
+        font-weight: 500;
+        
+      }
+    }
+  }
+}
+.desc_p{
+  margin-top: -5rem;
+}
+
+.stack {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+  
+
+  p {
+    color: black !important;
+    font-weight: 600 !important;
+    background-color: white;
+    box-shadow: 0 10px 15px 0 rgba(255,83,48,.35);
+    padding: 1rem 1.3rem;
+    font-family: $text-font !important;
+    border: 2px solid #ff4d30;
+    border-radius: 0.3rem;
+    transition: background 0.75s;
+
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  gap: 1rem;
+  align-items: center;
+  
+
+  a {
+    font-size: $text-size;
+    color: $black-shade;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    i {
+      font-size: 2.8rem;
+    }
+
+    .link-icon {
+      font-size: 2rem !important;
+    }
+
+    img {
+      width: 3.5rem;
+    }
+
+    &:hover {
+      color: #ff004f;
+      transition: all 0.3s;
+    }
+  }
+}
+
+.reversed-proj {
+  flex-direction: row-reverse !important;
+}
+
+.container {
+  @media (max-width: 460px) {
+    padding: 0 1.7rem;
+  }
+}
+
+.new-projects {
+  font-size: 2.6rem;
+  text-align: center;
+  color: $black-shade;
+}
+
+
+@media (max-width: 768px) {
+  .containerr {
+    padding: 0 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .projects-grid {
+    gap: 1rem; /* Adjust gap for smaller screens */
+  }
+
+  .stack {
+    flex-direction: column; /* Change to column layout for smaller screens */
+    align-items: center; /* Center align items for smaller screens */
+    margin-top: 0; /* Remove top margin for smaller screens */
+
+    p {
+      margin-bottom: 1rem; /* Adjust margin for smaller screens */
+    }
+  }
+
+  .links {
+    flex-direction: column; /* Change to column layout for smaller screens */
+    align-items: center; /* Center align items for smaller screens */
+    margin-top: 0; /* Remove top margin for smaller screens */
+  }
+
+  .reversed-proj {
+    flex-direction: column; /* Change to column layout for smaller screens */
+  }
+}

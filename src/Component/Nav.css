@@ -1,0 +1,131 @@
+nav {
+  font-family: "Space Grotesk", sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 200;
+}
+nav a {
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 120rem;
+  margin: 0 auto;
+  font-size: 2rem;
+  padding: 3rem 2rem;
+  color: #000;
+}
+.navbar p {
+  font-size: 3rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.navbar ul {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+@media (max-width: 750px) {
+  .navbar ul {
+    display: none;
+  }
+}
+.navbar ul a {
+  color: #000;
+  font-weight: 700;
+}
+.navbar ul a:hover {
+  transition: all 0.3s;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.navbar span {
+  display: flex;
+  gap: 2rem;
+}
+.navbar span i {
+  cursor: pointer;
+}
+@media (max-width: 750px) {
+  .navbar span i {
+    display: none;
+  }
+}
+.navbar span i:hover {
+  transition: all 0.3s;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 2.7rem;
+}
+@media (max-width: 750px) {
+  .hamburger-menu {
+    display: flex !important;
+  }
+}
+
+.hamburger {
+  background-color: #000;
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.16);
+  position: fixed;
+}
+
+.mobile-navbar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 9999999;
+  color: #000;
+  font-size: 3rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+.mobile-navbar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  list-style: none;
+}
+.mobile-navbar ul a {
+  color: #000;
+  font-weight: 600;
+}
+.mobile-navbar ul a:hover {
+  transition: all 0.3s;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.open-nav {
+  left: 0;
+}
+
+.close-mobile {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  cursor: pointer;
+}
+.close-mobile:hover {
+  transition: all 0.3s;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}/*# sourceMappingURL=Nav.css.map */
