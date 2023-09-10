@@ -36,6 +36,7 @@ nav ul {
 	font-size: 1.4rem;
   margin-left: 25%;
 }
+
 .nav-menu {
     display: flex;
     margin-left: 210%;
@@ -59,7 +60,7 @@ nav ul {
     display: none;
     font-size: 1.7rem;
   
-    @media (max-width: 750px) {
+    @media (max-width: 400px) {
       display: flex !important;
     }
 }
@@ -75,7 +76,7 @@ nav ul {
         padding: 1 rem;
         background-color: #fff;
         font-size: medium;
-        gap: 15rem;
+        gap: 13rem;
         
     }
     .nav-menu {
@@ -83,7 +84,7 @@ nav ul {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background: rgba(255,255,255);
         position: absolute;
         top: 70px;
@@ -103,10 +104,13 @@ nav ul {
     .nav-menu li a{
         font-size: 2rem;
     }
-
+    .logo{
+      margin-left: -2rem;
+    }
     .hamburger-menu{
         display: initial;
-    }
+      }
+    
     
 }
 .mobile-navbar {
@@ -116,7 +120,7 @@ nav ul {
     top: 0;
     left: -100%;
     width: 100%;
-    height: 100vh;
+    height: 120%;
     background-color: #fff;
     z-index: 1000;
     color: #000;
@@ -164,3 +168,12 @@ nav ul {
   .mobile-navbar__links a:hover{
 	color: #2f7fd4;
   }
+/*
+  @media screen and (max-width: 400px) {
+    .hamburger-menu{
+      display: initial;
+
+
+   }
+}
+*/

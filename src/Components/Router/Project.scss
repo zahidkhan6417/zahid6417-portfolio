@@ -22,23 +22,22 @@ $headings-size: 2.5rem;
   @media (max-width: 1020px) {
     padding: 8rem 0;
   }
+  
 }
 .containerr {
   margin: 0 auto;
   max-width: 100rem;
   padding: 0 5rem;
   gap: 0.5rem;
+  @media (max-width: 460px)
+  {
+    padding: 0 1.7rem;
+  }
 }
 
 .project-content {
   display: flex;
   flex-direction: column;
-  
-
-  @media (max-width: 600px) {
-    text-align: center;
-  }
-
   p {
     color: #ff004f;
     font-size: $text-size;
@@ -53,6 +52,12 @@ $headings-size: 2.5rem;
     margin-bottom: 6rem;
   }
 }
+@media (max-width: 480px){
+  .project-content {
+    text-align: center;
+}
+
+}
 
 .projects-grid {
   margin-top: -2rem;
@@ -62,7 +67,7 @@ $headings-size: 2.5rem;
   width: 100%;
   height: auto;
   gap: 5rem;
-  padding-left: 5rem;
+  //padding-left: 5rem;
 
 
   .pro {
@@ -88,7 +93,7 @@ $headings-size: 2.5rem;
       }
 
       @media (max-width: 400px) {
-        width: 80%;
+        width: 100%;
       }
     }
 
