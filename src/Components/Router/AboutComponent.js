@@ -70,19 +70,19 @@ effective team communication.
                                 className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`}
                                 onClick={() => handleTabClick('skills')}
                             >
-                                Skills
+                                <b>Skills</b>
                             </p>
                             <p
                                 className={`tab-links ${activeTab === 'experience' ? 'active-link' : ''}`}
                                 onClick={() => handleTabClick('experience')}
                             >
-                                Experience
+                               <b>Experience</b> 
                             </p>
                             <p
                                 className={`tab-links ${activeTab === 'education' ? 'active-link' : ''}`}
                                 onClick={() => handleTabClick('education')}
                             >
-                                Education
+                               <b> Education</b> 
                             </p>
                         </div>
                         <div className={`tab-contents ${activeTab === 'skills' ? 'active-tab' : ''}`}>

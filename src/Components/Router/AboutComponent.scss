@@ -38,8 +38,8 @@
     padding: 20px;
 
     @media (max-width: 600px) {
-        width: 20rem;
-        height: 20rem;
+        width: 18rem;
+        height: 18rem;
         margin-bottom: 3rem;
       }
   
@@ -59,11 +59,12 @@
     @media (max-width: 1020px) {
         width: 18rem;
         height: 18rem;
+        
     }
     @media (max-width: 400px) {
         width: 18rem;
         height: 18rem;
-        margin-left: -7rem;
+        margin-left: -6rem;
     }
 
 }
@@ -90,12 +91,12 @@
         margin-bottom: 1rem; 
         @media (max-width: 400px)
         {
-            margin-right: 1rem;
+            margin-right: 8rem;
         }
     
     }  
 }
-.about-col-2 p{
+.about-col-2 p{ 
     font-size: 1.0rem;
     font-family: "Mulish", sans-serif;
     color:  #767676;
@@ -109,6 +110,8 @@
       @media (max-width: 400px) {
         text-align: center;
         padding-right: 3rem;
+        margin-right: 5rem;
+
     } 
 }
 

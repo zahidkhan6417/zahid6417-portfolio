@@ -7,21 +7,22 @@ import Contact from '../Components/Router/Contact'
 const HomeDetails = () => {
   return (
     <>
-      <div className='container'>
-        <div className='content'>
-            <div className='hero-text'>
-              <h1>Front-End React Developer</h1>
-              <p>Hi, I'm Md Zahid Khan. A passionate Front-end React Developer based in Pune, India. 📍</p> 
-            </div>
-            <div className='profile-picture'>
-            </div>
+      <section id='home' className='hero'>
+        <div className='container'>
+          <div className='content'>
+              <div className='hero-text'>
+                <h1>Front-End React Developer</h1>
+                <p>Hi, I'm Md Zahid Khan. A passionate Front-end React Developer based in Pune, India. 📍</p> 
+              </div>
+              <div className='profile-picture'>
+              </div>
+          </div>
         </div>
-
-      </div>
+      </section>
+      {/*
       <AboutComponent />
       <Project />
-      <Contact />
-
+  <Contact />*/}  
         
 
     

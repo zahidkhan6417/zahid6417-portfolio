@@ -1,84 +1,70 @@
 import { useState } from "react";
-import './Nav.css'
-import {FaBars, FaTimes} from "react-icons/fa"
-import { Link } from "react-router-dom";
-
+//import "../dist/styles.css";
+import { IconMenu2, IconX } from "@tabler/icons-react";
+import "./Nav.css"
 
 function Navbar() {
   const [hamburger, setHamburger] = useState(false);
-  const [nav, setNav] = useState(false);
-
 
   const hamburgerMenu = () => {
     setHamburger(!hamburger);
   };
 
-
   const pageUp = () => {
     window.scrollTo({ top: (0, 0), behavior: "smooth" });
   };
-  const openNav = () => {
-    setNav(!nav);
-  };
+
+  const navlinks = [
+    {
+      name: "Home",
+      link: "#home",
+    },
+    {
+      name: "About",
+      link: "#about",
+    },
+    {
+      name: "Projects",
+      link: "#projects",
+    },
+    {
+      name: "Contact",
+      link: "#contact",
+    },
+  ];
 
   return (
     <>
-      <nav className={hamburger ? "Hamburger" : ""}>
-        <div className="navbar">
-          <Link to="/">
-            <p onClick={pageUp}>Zahid.Dev</p>
-          </Link>
-          <ul>
-            <li>
-              <a href="#home">Home</a>
+      <nav>
+        <h3 onClick={pageUp} className="logo">
+          Zahid.dev
+        </h3>
+        <ul>
+          {navlinks.map((item) => (
+            <li key={item.name}>
+              <a href={item.link}>{item.name}</a>
             </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-          <span>
-            {/* mobile */}
-            <i onClick={openNav} className="hamburger-menu"><FaBars /></i>
-          </span>
-        </div>
+          ))}
+          <li onClick={() => hamburgerMenu()}>
+            <IconMenu2 className="mobile-menu" width={30} height={30} />
+          </li>
+        </ul>
       </nav>
 
-        {/* mobile nav */}
-        <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
-          <div onClick={openNav} className="close-mobile">
-            <i><FaTimes /></i>
-          </div>
-          <ul className="mobile-navbar__links">
-            <li>
-              <Link onClick={openNav}>
-                <a href="#home">Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav}>
-                <a href="#about">About</a>
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav}>
-                <a href="#projects">Projects</a>
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav}>
-                <a href="#contact">Contact</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
+      {/* mobile nav */}
+      <div className={`mobile-nav ${hamburger ? "open-menu" : "closed-menu"}`}>
+        <span onClick={() => hamburgerMenu()}>
+          <IconX width={30} height={30} />
+        </span>
 
-
+        <ul>
+          {navlinks.map((item) => (
+            <li key={item.name} onClick={() => hamburgerMenu()}>
+              <a href={item.link}>{item.name}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 }

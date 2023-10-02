@@ -1,8 +1,25 @@
+@import "../Global/boilerplate.scss";
+@import "../Global/colors.scss";
+@import "../Global/typhography.scss";
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: $gray-bg-color;
+    position: relative;
+  
+    @media (max-width: 900px) {
+      height: auto;
+      padding: 11rem 0;
+    }
+  }
 .container {
     margin: 0 auto;
     max-width: 110rem;

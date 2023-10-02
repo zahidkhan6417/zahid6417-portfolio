@@ -46,8 +46,8 @@
 }
 @media (max-width: 600px) {
   .about-col-1 {
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
     margin-bottom: 3rem;
   }
 }
@@ -75,7 +75,7 @@
   .about-col-1 img {
     width: 18rem;
     height: 18rem;
-    margin-left: -7rem;
+    margin-left: -6rem;
   }
 }
 
@@ -105,7 +105,7 @@
 }
 @media (max-width: 400px) {
   .about-col-2 .sub-title {
-    margin-right: 1rem;
+    margin-right: 8rem;
   }
 }
 
@@ -126,6 +126,7 @@
   .about-col-2 p {
     text-align: center;
     padding-right: 3rem;
+    margin-right: 5rem;
   }
 }
 

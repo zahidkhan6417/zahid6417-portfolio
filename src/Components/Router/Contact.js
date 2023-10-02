@@ -40,8 +40,8 @@ const Contact = () => {
             <div className="row">
                 <div className="contact-left">
                     <h1 className="sub-title">Contact Me</h1>
-                    <p><i><MdEmail /></i> zahidkhan8102@gmail.com</p>
-                    <p><i><FaPhone /></i> Phone: +91 9097343935</p>
+                    <p><i><MdEmail width={20} height={20} /></i> zahidkhan8102@gmail.com</p>
+                    <p><i><FaPhone /></i> +91 9097343935</p>
                     <p><i><FaMapMarkerAlt /></i> Pune, India</p>
                     <div className="social-icons">
                         <a href="https://www.instagram.com/__zahid_khan__/"><i><FaInstagram /></i></a>
